@@ -112,7 +112,7 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-return arr[Math.floor(Math.round() * arr.Length)];
+return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Function to generate password with user input
@@ -120,20 +120,20 @@ function generatePassword() {
   var options = getPasswordOptions ();
   var charactersPoss = [];
 
-  if (options.upperCasedCharacters) {
+  if (options.Upper) {
     charactersPoss = charactersPoss.concat(upperCasedCharacters);
   }
 
-  if (options.lowerCasedCharacters) {
+  if (options.Lower) {
     charactersPoss = charactersPoss.concat(lowerCasedCharacters);
   }
 
-  if (options.passwordNum) {
-    charactersPoss = charactersPoss.concat(passwordNum);
+  if (options.Num) {
+    charactersPoss = charactersPoss.concat(numericCharacters);
   }
 
-  if (options.passwordSpec) {
-    charactersPoss = charactersPoss.concat(passwordSpec);
+  if (options.Spec) {
+    charactersPoss = charactersPoss.concat(specialCharacters);
   }
 
   if (charactersPoss.length === 0) {
