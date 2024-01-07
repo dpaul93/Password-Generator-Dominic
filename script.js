@@ -103,10 +103,10 @@ function getPasswordOptions() {
   }
   
 
-  let passwordUpper = confirm("Would you like uppercase?");
-  let passwordLower = confirm("Would you like lowercase?");
-  let passwordNum = confirm("Would you like numbers?");
-  let passwordSpec = confirm("Would you like special characters?");
+  let passwordUpper = confirm("Would you like uppercase? - (Okay = Yes, Cancel = No)");
+  let passwordLower = confirm("Would you like lowercase? - (Okay = Yes, Cancel = No)");
+  let passwordNum = confirm("Would you like numbers? - (Okay = Yes, Cancel = No)");
+  let passwordSpec = confirm("Would you like special characters? - (Okay = Yes, Cancel = No)");
   return {
     Length: passwordLength,
     Upper: passwordUpper,
