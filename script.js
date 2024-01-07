@@ -117,6 +117,36 @@ return arr[Math.floor(Math.round() * arr.Length)];
 
 // Function to generate password with user input
 function generatePassword() {
+  var options = getPasswordOptions ();
+  var charactersPoss = [];
+
+  if (options.upperCasedCharacters) {
+    charactersPoss = charactersPoss.concat(upperCasedCharacters);
+  }
+
+  if (options.lowerCasedCharacters) {
+    charactersPoss = charactersPoss.concat(lowerCasedCharacters);
+  }
+
+  if (options.passwordNum) {
+    charactersPoss = charactersPoss.concat(passwordNum);
+  }
+
+  if (options.passwordSpec) {
+    charactersPoss = charactersPoss.concat(passwordSpec);
+  }
+
+  if (charactersPoss.length === 0) {
+    alert("Please select at least one character type");
+    return "";
+  }
+
+  var generatePassword = "";
+  for (var i = 0; i < options.Length; i++) {
+    generatePassword += getRandom(charactersPoss);
+  }
+
+  return generatePassword;
 }
 
 // Get references to the #generate element
