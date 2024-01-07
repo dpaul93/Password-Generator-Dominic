@@ -91,11 +91,17 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {
 
-  let passwordLength = parseInt(prompt("How many charaters do you want? 8 - 124"))
-  if (passwordLength < 8 || passwordLength > 128) {
-    alert("Sorry Password must be greater than 8 and less than 128 charaters.")
+  let passwordLength = parseInt(prompt("How many charaters do you want? 8 - 124")) || 0;
+  if (passwordLength == 0) {
+    alert("Password length can not be left empty, please select a value");
     return
   }
+  
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("Sorry Password must be greater than 8 and less than 128 charaters.");
+    return
+  }
+  
 
   let passwordUpper = confirm("Would you like uppercase?");
   let passwordLower = confirm("Would you like lowercase?");
