@@ -112,14 +112,11 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+return arr[Math.floor(Math.round() * arr.Length)];
 }
 
 // Function to generate password with user input
 function generatePassword() {
-  if (passwordUpper == true) {
-    upperCasedCharacters
-  }
 }
 
 // Get references to the #generate element
