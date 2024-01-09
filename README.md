@@ -12,19 +12,19 @@ In the script.js file it is coded in a sequencial order and that order is as fol
     - writing password into the #password input.
     - adding an event listener to the generate button. 
 
-    Please see screen shots of live application below. 
+ Please see screen shots of live application below. 
 
-    ![Alt text](image.png)
+![Alt text](/image-1.png)
 
-    ![Alt text](image-2.png)
+![Alt text](/image-2.png)
 
-    ![Alt text](image-3.png)
+![Alt text](/image-3.png)
 
-    ![Alt text](image-4.png)
+![Alt text](/image-4.png)
 
-    ![Alt text](image-5.png)
+![Alt text](/image-5.png)
 
-    ![Alt text](image-6.png)
+![Alt text](/image-6.png)
 
-    
+
 
