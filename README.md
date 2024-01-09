@@ -26,5 +26,7 @@ In the script.js file it is coded in a sequencial order and that order is as fol
 
 ![Alt text](/image-6.png)
 
+link to live page: https://dpaul93.github.io/Password-Generator-Dominic/
+
 
 
